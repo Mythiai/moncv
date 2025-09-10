@@ -1,0 +1,96 @@
+.accueil-projet,
+.accueil-CV {
+  background-color: white;
+  padding: 80px;
+}
+
+.accueil-projet h2,
+.accueil-CV h2 {
+  color: #242424;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.accueil-projet div,
+.accueil-CV div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin: 0 auto 15px;
+  margin-bottom: 15px;
+}
+
+.accueil-projet img,
+.accueil-CV img {
+  width: 19rem;
+  height: 19rem;
+  object-fit: contain;
+}
+
+
+.accueil-introduction {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.accueil-introduction h1 {
+  margin-bottom: 15px;
+}
+
+.accueil-introduction p {
+  margin-bottom: 30px;
+}
+
+.accueil-introduction div {
+  padding-right: 80px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 996px) {
+  .accueil-introduction {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accueil-introduction div {
+    padding-right: 0;
+    text-align: center;
+    order: 2;
+  }
+
+  .accueil-introduction img {
+    order: 1;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .accueil-projet {
+    padding: 20px;
+  }
+
+  .accueil-projet div,
+  .accueil-CV div {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .accueil-projet img,
+  .accueil-CV img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+  }
+}
